@@ -1,0 +1,11 @@
+elasticsearch:
+  replicas: 3
+  clusterName: elasticsearch
+  heapSize: 512m
+  image:
+    repository: "docker.elastic.co/elasticsearch/elasticsearch"
+    tag: "8.1.0"
+  indices:
+    - index1
+    - index2
+    - index3
